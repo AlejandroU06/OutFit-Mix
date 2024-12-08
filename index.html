@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUTFIT MIX</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="https://kit.fontawesome.com/e8c217cac2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <div class="barra">
+            <a href="#inicio">Inicio</a>
+            <a href="#avatar">Crea Tu Avatar</a>
+            <a href="#catalogo">Catalogo</a>
+            <a href="#quienes">¿Quienes Somos?</a>
+        </div>
+        <div class="surtitodo">
+            <img src="img/surtitodo.png" alt="Logo Surtitodo">
+        </div>
+        <div class="registro">
+            <a href="" id="log">Log in</a>
+            <a href="" id="sign">Sign up</a>
+        </div>
+    </header>
+    <section id="inicio">
+        <div class="slogan">
+            Tu guía personalizada para combinar estilo y comodidad en cada look
+        </div>
+        <div class="modeloInicio">
+            <model-viewer src="3d/nuevo.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1" auto-rotate>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+            
+        </div>
+    </section>
+    <section id="avatar">
+        <section class="ava">
+            <model-viewer src="3d/nuevo.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1" auto-rotate>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+        </section>
+        <section class="avatarBtn">
+        <div class="escoger" id="pEscoger" width="400px">
+            <button class="botones">
+                <img id="btn1" src="ropa/1.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn2" src="ropa/2.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn3" src="ropa/3.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn4" src="ropa/4.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn5" src="ropa/5.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn6" src="ropa/6.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn7" src="ropa/7.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn8" src="ropa/8.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn9" src="ropa/9.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn10" src="ropa/10.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn11" src="ropa/11.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn12" src="ropa/12.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn13" src="ropa/13.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn14" src="ropa/14.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn15" src="ropa/15.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn16" src="ropa/16.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn17" src="ropa/17.png" width="60" height="60" >
+            </button>
+            <button class="botones">
+                <img id="btn18" src="ropa/18.png" width="60" height="60" >
+            </button>
+        </div>
+
+        <div class="borrar" id="pColor">
+            <button id="btnC1" class="colores" style="background: #f6c7b6;" onclick="pressColor(1)"></button>
+            <button id="btnC2" class="colores" style="background: #f8b9a2;" onclick="pressColor(2)"></button>
+            <button id="btnC3" class="colores" style="background: #f8a789;" onclick="pressColor(3)"></button>
+            <button id="btnC4" class="colores" style="background: #c28873;" onclick="pressColor(4)"></button>
+            <button id="btnC5" class="colores" style="background: #a46e5a;" onclick="pressColor(5)"></button>
+            <button id="btnC6" class="colores" style="background: #794b42;" onclick="pressColor(6)"></button>
+            <button id="btnC7" class="colores" style="background: #743e33;" onclick="pressColor(7)"></button>
+        </div>
+
+
+        <div class="borrar" id="pPersonalizar">
+            <h3>Tu avatar Personalizado a un click</h3>
+            <button id="foto">Toma una foto</button>
+            <h3>o sube una <a style="text-decoration: underline;" href="">imagen</a></h3>
+            <div class="genero">
+                <button class="btnContain" id="male" onclick="generoPress(1)">
+                    <svg class="icono" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Page-1" stroke="none" stroke-width="1">
+                            <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -2079.000000)" fill="#000000">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path d="M11,1937.005 C8.243,1937.005 6,1934.762 6,1932.005 C6,1929.248 8.243,1927.005 11,1927.005 C13.757,1927.005 16,1929.248 16,1932.005 C16,1934.762 13.757,1937.005 11,1937.005 L11,1937.005 Z M16,1919 L16,1921 L20.586,1921 L15.186,1926.402 C14.018,1925.527 12.572,1925.004 11,1925.004 C7.134,1925.004 4,1928.138 4,1932.004 C4,1935.87 7.134,1939.005 11,1939.005 C14.866,1939.005 18,1935.871 18,1932.005 C18,1930.433 17.475,1928.987 16.601,1927.818 L22,1922.419 L22,1927 L24,1927 L24,1919 L16,1919 Z" id="male-[#1364]"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+                <button class="btnContain" id="female" onclick="generoPress(2)">
+                    <svg class="icono" viewBox="-3 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Dribbble-Light-Preview" transform="translate(-103.000000, -2079.000000)" fill="#000000">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path d="M54.010058,1930.97067 C52.6753909,1930.97067 51.421643,1930.45194 50.4775859,1929.51025 C47.3327267,1926.36895 49.5904718,1920.99511 54.010058,1920.99511 C58.4266471,1920.99511 60.6903863,1926.36595 57.5425301,1929.51025 C56.5984729,1930.45194 55.344725,1930.97067 54.010058,1930.97067 M58.9411333,1930.92079 C63.3617184,1926.50661 60.1768991,1919 54.007061,1919 C47.8512088,1919 44.6294265,1926.50661 49.0510106,1930.92079 C50.1609021,1932.02908 51.9840813,1932.67949 52.9830836,1932.88598 L52.9830836,1935.00978 L49.9860767,1935.00978 L49.9860767,1937.00489 L52.9830836,1937.00489 L52.9830836,1939 L54.9810882,1939 L54.9810882,1937.00489 L57.9780951,1937.00489 L57.9780951,1935.00978 L54.9810882,1935.00978 L54.9810882,1932.88598 C56.9790928,1932.67949 57.8302427,1932.02908 58.9411333,1930.92079" id="female-[#1363]"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="altura">
+                <h2 style="padding-top: 50px;  text-align: left;">Altura</h2>
+                <input class="bAltura" type="range" min="50" max="220" value="172" step="1">
+            </div>
+        </div>
+
+        
+        <div class="princi2" id="secEdit">
+            <button class="btnContain" onclick="cambiarP(1), press(1)">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icono" id="btnCamisa" stroke="currentColor" stroke-width="1">
+                    <defs id="defs2"/>
+                    <g id="layer1" transform="translate(-156,-340)">
+                    <path d="m 169.5,357.01367 a 1,1 0 0 0 -0.70703,0.29297 1,1 0 0 0 0,1.41406 l 5,5 a 1,1 0 0 0 1.41406,0 1,1 0 0 0 0,-1.41406 l -5,-5 A 1,1 0 0 0 169.5,357.01367 Z" id="path453523" stroke="currentColor" />
+                    <path d="m 169.5,351.51367 a 1,1 0 0 0 -0.70703,0.29297 1,1 0 0 0 0,1.41406 l 5,5 a 1,1 0 0 0 1.41406,0 1,1 0 0 0 0,-1.41406 l -5,-5 A 1,1 0 0 0 169.5,351.51367 Z" id="path453515" stroke="currentColor"/>
+                    <path d="m 168.07812,342.01562 a 1.0001,1.0001 0 0 0 -0.48437,0.084 l -9,4 a 1.0001,1.0001 0 0 0 -0.58398,1.05469 l 1,7 a 1.0001,1.0001 0 0 0 1.4375,0.7539 L 163,353.63281 v 15.38086 a 1.0001,1.0001 0 0 0 1,1 h 16 a 1.0001,1.0001 0 0 0 1,-1 v -15.38086 l 2.55273,1.27539 a 1.0001,1.0001 0 0 0 1.4375,-0.7539 l 1,-7 a 1.0001,1.0001 0 0 0 -0.58398,-1.05469 l -9,-4 A 1.0001,1.0001 0 0 0 175,343.01367 c 0,1.6687 -1.3313,3 -3,3 -1.6687,0 -3,-1.3313 -3,-3 a 1.0001,1.0001 0 0 0 -0.92188,-0.99805 z m -0.79101,2.40821 c 0.62208,2.05393 2.46313,3.58984 4.71289,3.58984 2.24976,0 4.09081,-1.53591 4.71289,-3.58984 l 7.18945,3.19531 -0.69726,4.87891 -2.75781,-1.37891 A 1.0001,1.0001 0 0 0 179,352.01367 v 16 h -14 v -16 a 1.0001,1.0001 0 0 0 -1.44727,-0.89453 l -2.75781,1.37891 -0.69726,-4.87891 z" id="path453497" stroke="currentColor"/>
+                    </g>
+                </svg>
+            </button>
+            <button class="btnContain" onclick="cambiarP(2), press(2)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono" id="btnPantalon">
+                    <path d="M33 44H42L38 4H10L6 44H15L24 19L33 44Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24 4V9.5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 4C17 4 17 10 15 12C13 14 8.90002 15 8.90002 15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31 4C31 4 31 10 33 12C35 14 39.1 15 39.1 15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="btnContain" onclick="cambiarP(3), press(3)">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" id="btnZapato" class="icono" preserveAspectRatio="xMidYMid meet">
+                    <path d="M7.6 13.2s1.7-2.2 9.2 1.2c5.9 2.7-10.4 10.4-12 7.2c-1-1.9 2.8-8.4 2.8-8.4" fill="none"></path>
+                    <path d="M56.5 41.1c-1.4-1.2-5.4-2-6.5-3.1c-4.2-4.6-13-12.7-20.5-26.4c-2.7-5.1-15.2 3.8-15.2 3.8l21.8" fill="none"></path>
+                    <g fill="none">
+                    <path d="M2.7 31.5s-.4-3.9 1.3-9.1c.1 5.9 3.8 7.3 2.8 15.1l-4.1-6"></path>
+                    <path d="M22.2 49.6c4.6-10.7 24.4.1 34.3-8.5c1.6.2 4.8 5.7 4.8 5.7s-3.6 14.4-39.1 2.8"></path>
+                    </g>
+                    <path d="M2.7 31c-1 0-.8 6.9 0 8c5.3 6.6 10.8 8.3 18.1 17.1C29.6 66.6 62 61.6 62 52.6c0-7.4-.9-6.7-.9-6.7c-2.3 6-22.8 7.3-30.3 5.7C14.3 48.2 3.8 31 2.7 31" fill="currentColor"></path>               
+                    <g fill="currentColor">                    
+                    <path d="M33.3 43c-.2 0-.5-.1-.7-.3c-.4-.5-.4-1.2 0-1.7c.2-.3 5.6-6.6 15.8-6.6c.5 0 1 .5 1 1.2c0 .6-.4 1.2-1 1.2c-9.4 0-14.4 5.9-14.5 5.9c-.1.2-.3.3-.6.3"></path>
+                    <path d="M29.7 38.1c-.2 0-.4-.1-.6-.3c-.4-.4-.5-1.1-.2-1.6c.2-.3 4.4-6.6 16.2-6.6c.5 0 1 .5 1 1.2c0 .6-.4 1.2-1 1.2c-10.7 0-14.6 5.7-14.7 5.7c-.1.2-.4.4-.7.4"></path>
+                    <path d="M26.2 33.9c-.2 0-.5-.1-.7-.3c-.4-.4-.4-1.2-.1-1.7c4.8-6.4 16.1-6.5 16.6-6.5s1 .5 1 1.2c0 .6-.4 1.2-1 1.2c-.1 0-10.9.1-15.2 5.7c-.1.3-.4.4-.6.4"></path>
+                    <path d="M22.5 28.3c-.3 0-.6-.2-.8-.5c-.3-.5-.2-1.3.2-1.6c.2-.2 6-5.3 16.8-5.3c.5 0 1 .5 1 1.2s-.4 1.2-1 1.2c-10.1 0-15.6 4.8-15.6 4.9c-.2.1-.4.1-.6.1"></path>
+                    <path d="M18.9 24c-.3 0-.6-.2-.8-.4c-.3-.5-.3-1.2.2-1.7c.2-.2 5.7-5.4 17.5-5.4c.5 0 1 .5 1 1.2c0 .6-.4 1.2-1 1.2c-11.1 0-16.2 4.9-16.3 4.9c-.2.1-.4.2-.6.2"></path>
+                    </g>
+                    </svg>
+            </button>
+        </div>
+
+        <div class="princi">
+            <button class="btnContain" onclick="press(4)">
+                <svg class="icono" id="btnUser" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 21H4C4 17.134 7.13401 14 11 14C11.1681 14 11.3348 14.0059 11.5 14.0176M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7ZM12.5898 21L14.6148 20.595C14.7914 20.5597 14.8797 20.542 14.962 20.5097C15.0351 20.4811 15.1045 20.4439 15.1689 20.399C15.2414 20.3484 15.3051 20.2848 15.4324 20.1574L19.5898 16C20.1421 15.4477 20.1421 14.5523 19.5898 14C19.0376 13.4477 18.1421 13.4477 17.5898 14L13.4324 18.1574C13.3051 18.2848 13.2414 18.3484 13.1908 18.421C13.1459 18.4853 13.1088 18.5548 13.0801 18.6279C13.0478 18.7102 13.0302 18.7985 12.9948 18.975L12.5898 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="btnContain" onclick="press(5)">
+                <svg version="1.1" id="btnHead" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" class="icono" viewBox="0 0 512 512"  xml:space="preserve">
+                    <g>
+	                <path class="st0" d="M475.606,295.503L434.2,207.722c0.109-2.625,0.203-5.25,0.203-7.906c0-110.344-89.469-199.813-199.828-199.813
+		            S34.747,89.472,34.747,199.815c0,62.063,28.281,117.516,72.672,154.172v70.625c0,6.891,4.109,13.125,10.453,15.813l165.5,70.203
+		            c5.297,2.25,11.375,1.703,16.172-1.469c4.813-3.188,7.703-8.563,7.703-14.313v-59.859c0-9.469,7.688-17.172,17.156-17.172h84.766
+		            c9.484,0,17.156-7.688,17.156-17.156V349.05c0-6.578,3.766-12.578,9.672-15.453l31.578-15.328
+		            C476.044,314.144,479.622,304.003,475.606,295.503z"/>
+                    </g>
+                </svg>
+            </button>
+            <button class="btnContain" onclick="press(6)">
+                <svg viewBox="0 -14.5 64 64" class="icono" id="btnRopa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                    <desc>Created with Sketch.</desc>
+                    <defs></defs>
+                    <g id="Page-1" stroke="currentColor" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                        <path d="M24.9,7 C24.9,3.7 27.6,1 30.9,1 C34.2,1 36.8,3.7 36.8,7 C36.8,10.3 30.9,11.6 30.9,15 L1,31 C1,32.1 1.8,33.1 2.9,33.1 L60.8,33.1 C61.8,33.1 62.7,32.2 62.7,31 L32.8,16.1" id="Hanger" stroke="currentColor" stroke-width="2" sketch:type="MSShapeGroup"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </section>
+    </section>
+    <section id="catalogo">
+        <h1 style="margin: 45px 0px 190px 0px;">Obten Información de Nuestro Catalogo Virtual aqui</h1>
+        <button class="btnCatalogo">
+            <a href="https://www.surtitodo.com.co/">
+            <svg  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 437.899 437.899" xml:space="preserve">
+<g>
+	<path style="fill:#D19B6F;" d="M348.675,178.557c-8.076-1.798-11.234-8.551-11.769-12.372c-0.029-0.207-0.044-1.401-0.044-1.401
+		c-5.204,5.687-13.053,9.952-24.521,9.952c-11.469,0-19.316-4.265-24.52-9.953c0,0-0.015,1.194-0.043,1.401
+		c-0.534,3.819-3.69,10.57-11.76,12.371c-0.167,8.943,1.115,32.742,17.994,48.168c1.022,0.934,1.557,2.287,1.45,3.667
+		c-0.105,1.38-0.842,2.635-1.994,3.401c-0.264,0.185-29.711,21.751-30.664,111.984h49.537h49.539
+		c-0.953-90.233-30.401-111.8-30.704-112.01c-1.122-0.782-1.848-2.045-1.938-3.409c-0.09-1.365,0.426-2.71,1.435-3.633
+		C347.617,211.238,348.862,187.49,348.675,178.557z"/>
+	<path style="fill:#BB844C;" d="M284.434,229.872c-20.58-22.359-17.341-54.431-17.186-55.855c0.251-2.282,2.178-4.009,4.474-4.009
+		c5.433,0,6.776-3.437,7.1-4.869v-17.866h-52.05v148.964h30.941C264.345,255.286,277.692,236.851,284.434,229.872z"/>
+	<path style="fill:#CCB683;" d="M389.672,15.611c0-3.646-2.966-6.611-6.61-6.611s-6.61,2.966-6.61,6.611
+		c0,3.645,2.966,6.609,6.61,6.609S389.672,19.256,389.672,15.611z"/>
+	<path style="fill:#C6CDC9;" d="M134.959,269.071c20.188,0,31.655-4.337,35.965-6.399V189.85c0-1.428,0.678-2.771,1.827-3.62
+		c1.149-0.85,2.632-1.101,3.997-0.681l11.782,3.628c0.679-7.856,1.578-19.272,1.49-22.795
+		c-0.362-14.634-10.419-19.292-10.848-19.484c-0.099-0.044-11.862-6.411-11.862-6.411c-0.605,4.024-2.156,8.921-5.834,13.227
+		c-5.645,6.607-14.567,9.958-26.518,9.958c-11.95,0-20.872-3.35-26.517-9.958c-3.679-4.306-5.229-9.205-5.833-13.229
+		c0,0-11.769,6.373-11.901,6.429c-0.39,0.175-10.447,4.833-10.81,19.467c-0.088,3.523,0.812,14.939,1.491,22.795l11.779-3.628
+		c1.362-0.42,2.848-0.168,3.997,0.681c1.149,0.849,1.827,2.192,1.827,3.62v72.825C103.281,264.725,114.751,269.071,134.959,269.071z
+		"/>
+	<path style="fill:#CCB683;" d="M61.448,15.611c0-3.646-2.966-6.611-6.61-6.611s-6.61,2.966-6.61,6.611
+		c0,3.645,2.966,6.609,6.61,6.609S61.448,19.256,61.448,15.611z"/>
+	<rect x="38.797" y="396.871" style="fill:#CCB683;" width="360.305" height="8.771"/><path style="fill:#7C5F53;" d="M389.228,324.802h-1.666V30.553c6.419-1.937,11.11-7.899,11.11-14.942
+		c0-8.608-7.003-15.611-15.61-15.611c-8.607,0-15.61,7.003-15.61,15.611c0,7.042,4.691,13.005,11.11,14.942v6.012h-78.897
+		c-4.614-0.214-17.725-1.985-24.48-7.657c-13.66-11.469-32.107-13.982-55.529-14.071c-0.03,0-0.058-0.009-0.088-0.009
+		c-0.208,0-0.409,0.004-0.617,0.004c-0.207,0-0.408-0.004-0.616-0.004c-0.03,0-0.058,0.008-0.088,0.009
+		c-23.423,0.089-41.868,2.602-55.531,14.071c-7.861,6.601-23.25,7.588-24.494,7.657H59.336v-6.012
+		c6.42-1.937,11.111-7.899,11.111-14.942C70.448,7.003,63.445,0,54.837,0s-15.61,7.003-15.61,15.611
+		c0,7.042,4.691,13.004,11.109,14.941v294.249h-1.664c-10.584,0-18.875,12.348-18.875,28.11v80.487c0,2.485,2.015,4.5,4.5,4.5
+		c2.485,0,4.5-2.015,4.5-4.5v-18.758h360.305v18.758c0,2.485,2.015,4.5,4.5,4.5c2.485,0,4.5-2.015,4.5-4.5v-80.487
+		C408.102,337.149,399.812,324.802,389.228,324.802z M376.452,15.611c0-3.646,2.966-6.611,6.61-6.611s6.61,2.966,6.61,6.611
+		c0,3.645-2.966,6.609-6.61,6.609S376.452,19.256,376.452,15.611z M361.579,45.565h16.983v21.2h-18.256
+		c2.471-3.335,3.826-7.343,3.827-11.569C364.133,51.761,363.235,48.47,361.579,45.565z M137.733,104.023
+		c-3.379,2.064-6.241,5.581-6.989,10.972l-43.798,23.746c-2.093,0.975-15.563,8.002-16.045,27.418
+		c-0.148,5.961,1.933,28.418,2.021,29.371c0.125,1.35,0.852,2.57,1.979,3.324c1.126,0.754,2.533,0.96,3.826,0.561l11.267-3.47
+		v69.399c0,1.486,0.734,2.877,1.961,3.715c0.539,0.368,13.529,9.012,43.005,9.012c29.478,0,42.466-8.645,43.004-9.012
+		c1.227-0.839,1.961-2.229,1.961-3.715v-69.4l11.269,3.47c1.292,0.397,2.699,0.193,3.827-0.561c1.126-0.753,1.852-1.974,1.977-3.323
+		c0.089-0.953,2.168-23.41,2.021-29.371c-0.482-19.416-13.951-26.443-16.044-27.418l-43.137-23.383
+		c1.025-4.094,4.583-4.686,6.222-4.724c2.485,0,4.5-2.015,4.5-4.5v-2.11h106.878c-3.379,2.064-6.241,5.581-6.989,10.972
+		l-43.938,23.82c-1.811,0.981-2.724,3.066-2.218,5.062c0.507,1.996,2.303,3.394,4.362,3.394h9.116v153.464
+		c0,2.485,2.015,4.5,4.5,4.5h34.145c-1.645,12.928-2.636,27.845-2.636,45.04c0,2.485,2.015,4.5,4.5,4.5h54.061h54.062
+		c2.485,0,4.5-2.015,4.5-4.5c0-80.095-21.462-110.89-30.652-120.404c20.581-22.359,17.341-54.431,17.185-55.855
+		c-0.251-2.282-2.179-4.009-4.474-4.009c-5.481,0-6.802-3.5-7.101-4.852v-17.884h12.488c2.059,0,3.855-1.398,4.362-3.394
+		c0.506-1.996-0.407-4.081-2.218-5.062l-43.273-23.458c1.025-4.094,4.583-4.686,6.221-4.724c2.485,0,4.5-2.015,4.5-4.5v-2.11h50.618
+		v283.848H59.336V104.023H137.733z M130.563,95.023c0.323-2.738,2.654-4.87,5.478-4.87c2.823,0,5.154,2.132,5.478,4.87H130.563z
+		 M97.166,186.229c-1.149-0.849-2.635-1.101-3.997-0.681l-11.779,3.628c-0.68-7.855-1.579-19.271-1.491-22.795
+		c0.362-14.634,10.42-19.292,10.81-19.467c0.133-0.056,11.901-6.429,11.901-6.429c0.604,4.023,2.154,8.922,5.833,13.229
+		c5.645,6.607,14.566,9.958,26.517,9.958c11.95,0,20.872-3.35,26.518-9.958c3.678-4.306,5.229-9.203,5.834-13.227
+		c0,0,11.764,6.367,11.862,6.411c0.429,0.191,10.485,4.85,10.848,19.484c0.088,3.523-0.812,14.939-1.49,22.795l-11.782-3.628
+		c-1.365-0.42-2.848-0.169-3.997,0.681c-1.15,0.849-1.827,2.192-1.827,3.62v72.823c-4.31,2.062-15.777,6.399-35.965,6.399
+		c-20.208,0-31.679-4.346-35.966-6.396V189.85C98.994,188.421,98.316,187.078,97.166,186.229z M114.824,147.271h40.272
+		c-0.153,0.199-2.775,7.4-20.137,7.4C117.598,154.672,114.993,147.492,114.824,147.271z M158.522,138.271H111.4
+		c-0.102-0.934-0.139-1.779-0.138-2.477l23.694-12.846l23.703,12.849C158.661,136.495,158.623,137.339,158.522,138.271z
+		 M315.118,104.023c-3.379,2.064-6.241,5.581-6.989,10.972l-24.626,13.351l-23.959-12.989c1.025-4.094,4.583-4.686,6.221-4.724
+		c2.485,0,4.5-2.015,4.5-4.5v-2.11H315.118z M307.946,95.023c0.323-2.738,2.654-4.87,5.478-4.87c2.823,0,5.155,2.132,5.478,4.87
+		H307.946z M331.177,233.765c0.303,0.211,29.751,21.777,30.704,112.01h-49.539h-49.537c0.953-90.233,30.4-111.799,30.664-111.984
+		c1.152-0.767,1.889-2.021,1.994-3.401c0.106-1.38-0.429-2.733-1.45-3.667c-16.879-15.427-18.161-39.226-17.994-48.168
+		c8.07-1.801,11.226-8.552,11.76-12.371c0.028-0.207,0.043-1.401,0.043-1.401c5.204,5.688,13.052,9.953,24.52,9.953
+		c11.468,0,19.316-4.265,24.521-9.952c0,0,0.015,1.194,0.044,1.401c0.534,3.821,3.692,10.574,11.769,12.372
+		c0.186,8.933-1.059,32.682-18.002,48.167c-1.009,0.923-1.524,2.268-1.435,3.633C329.33,231.72,330.055,232.983,331.177,233.765z
+		 M226.772,147.271h52.05v17.866c-0.323,1.432-1.667,4.869-7.1,4.869c-2.296,0-4.223,1.728-4.474,4.009
+		c-0.155,1.425-3.395,33.496,17.186,55.855c-6.742,6.979-20.089,25.414-26.721,66.364h-30.941V147.271z M226.399,138.271
+		l28.264-15.323l19.398,10.516l-8.867,4.807H226.399z M288.635,147.271h47.414c-0.542,2.131-1.433,4.74-2.888,7.307
+		c-4.198,7.403-11.202,11.157-20.819,11.157c-9.616,0-16.621-3.753-20.818-11.157C290.068,152.011,289.177,149.401,288.635,147.271z
+		 M301.811,138.271l-8.866-4.807l19.397-10.516l28.266,15.323H301.811z M250.267,95.023c0.323-2.738,2.654-4.87,5.478-4.87
+		c2.823,0,5.154,2.132,5.478,4.87H250.267z M327.911,95.023c-0.344-7.704-6.7-13.87-14.487-13.87
+		c-7.786,0-14.143,6.166-14.486,13.87h-28.706c-0.344-7.704-6.7-13.87-14.486-13.87c-7.786,0-14.143,6.166-14.486,13.87h-90.732
+		c-0.344-7.704-6.7-13.87-14.486-13.87c-7.786,0-14.143,6.166-14.486,13.87H59.336V75.766h319.226v19.258H327.911z M299.371,45.561
+		c0.064,0.003,32.83,0.004,32.83,0.004c-0.816,1.803-1.261,3.769-1.261,5.807c0,3.769,1.467,7.311,4.132,9.976
+		c1.758,1.757,4.606,1.757,6.364-0.001c1.757-1.758,1.757-4.607-0.001-6.364c-0.964-0.963-1.495-2.245-1.495-3.608
+		c0.001-1.363,0.532-2.645,1.497-3.61c1.418-1.418,3.303-2.198,5.309-2.198c2.005,0,3.89,0.781,5.309,2.2
+		c1.985,1.984,3.079,4.623,3.079,7.429c0,2.807-1.094,5.446-3.08,7.431c-2.342,2.341-6.884,3.884-12.158,4.14h-11.507
+		c-9.622-0.37-29.469-2.773-39.583-15.786c-2.522-3.245-5.101-6.225-7.712-8.928C289.997,45.11,298.832,45.538,299.371,45.561z
+		 M247.418,32.889c9.982,0,22.758,8.79,34.281,23.614c3.346,4.305,7.44,7.652,11.852,10.263h-36.908
+		c3.565-5.009,3.444-11.461-0.578-15.822c-1.685-1.827-4.532-1.941-6.359-0.256c-1.826,1.686-1.94,4.532-0.256,6.359
+		c1.573,1.705,0.391,4.09-0.787,5.277c-0.997,1.005-4.684,3.892-10.201-1.128c-7.23-6.576-8.632-14.257-3.846-21.073
+		c3.33-4.742,7.385-7.107,12.395-7.229C247.147,32.891,247.283,32.889,247.418,32.889z M218.95,23.832
+		c7.789,0.014,14.945,0.299,21.477,1.097c-5.145,1.585-9.628,4.97-13.175,10.021c-7.183,10.23-5.589,22.295,4.04,31.815h-24.684
+		c9.629-9.521,11.222-21.585,4.039-31.815c-3.547-5.051-8.031-8.436-13.175-10.021C204.004,24.131,211.161,23.846,218.95,23.832z
+		 M190.886,32.893c5.011,0.122,9.065,2.486,12.395,7.229c4.786,6.816,3.385,14.497-3.844,21.073
+		c-5.522,5.021-9.206,2.132-10.203,1.127c-1.179-1.186-2.36-3.571-0.787-5.276c1.685-1.827,1.57-4.673-0.256-6.359
+		c-1.827-1.684-4.675-1.569-6.359,0.256c-4.021,4.36-4.143,10.813-0.578,15.822h-36.917c4.415-2.61,8.514-5.955,11.862-10.263
+		C167.88,41.476,180.853,32.668,190.886,32.893z M85.848,47.764c1.416-1.417,3.3-2.198,5.305-2.198c2.006,0,3.891,0.78,5.309,2.199
+		c0.965,0.964,1.496,2.246,1.496,3.609c0.001,1.363-0.53,2.645-1.494,3.608c-1.758,1.757-1.758,4.606-0.001,6.364
+		c1.757,1.757,4.605,1.758,6.364,0.001c2.665-2.665,4.132-6.207,4.131-9.976c0-2.038-0.443-4.004-1.26-5.807
+		c0,0,32.766-0.001,32.83-0.004c0.538-0.023,9.38-0.451,18.284-3.512c-2.614,2.705-5.196,5.686-7.718,8.93
+		c-10.112,13.01-29.958,15.415-39.582,15.786H98.004c-5.276-0.255-9.817-1.798-12.158-4.139c-1.985-1.985-3.079-4.625-3.079-7.431
+		C82.766,52.389,83.86,49.75,85.848,47.764z M76.321,45.565c-1.656,2.905-2.555,6.196-2.554,9.631c0,4.226,1.355,8.235,3.827,11.569
+		H59.336v-21.2H76.321z M48.227,15.611c0-3.646,2.966-6.611,6.61-6.611s6.61,2.966,6.61,6.611c0,3.645-2.966,6.609-6.61,6.609
+		S48.227,19.256,48.227,15.611z M38.797,352.912c0-11.262,5.204-19.11,9.875-19.11h1.664v54.069H38.797V352.912z M399.102,405.642
+		H38.797v-8.771h360.305V405.642z M399.102,387.871h-11.54v-54.069h1.666c4.67,0,9.874,7.848,9.874,19.11V387.871z"/></g>
+</svg></a>
+        </button>
+    </section>
+    <section id="quienes">
+        <div class="informacion">
+            <section class="mision">
+            <div>
+                <h3>Misión</h3>
+                <p>Buscamos cambiar la forma de vestir de las personas, proporcionando una
+                    herramienta innovadora que les brinde a los usuarios nuevas experiencias
+                    al momento de combinar su ropa de forma creativa y personalizada,
+                    resaltando cada estilo, además queremos conquistar el mercado global,
+                    brindando a millones de personas el concepto de cambiar su enfoque e
+                    interacción con la moda haciéndola más conveniente, ecológica y
+                    cautivadora.</p>
+            </div>
+            <div>
+                <h3>Visión</h3>
+                <p>Buscamos ser los primeros en la industria de la moda
+                    digital, construyendo un ecosistema integrando el estilo
+                    con la tecnología de manera armoniosa. Tenemos el
+                    objetivo de conquistar el mercado global, brindando a
+                    millones de personas el concepto de cambiar su enfoque e
+                    interacción con la moda: haciéndola más conveniente,
+                    ecológica y cautivadora.</p>
+            </div>
+            <div>
+                <h3>Valores</h3>
+                <p><b>1. Innovación:</b> 
+                    Nos mantenemos a la vanguardia,
+                    desarrollando soluciones que
+                    transforman la manera en que los
+                    usuarios interactúan con ropa y
+                    accesorios. <br>
+                    <b>2. Calidad:</b> 
+                    Nos comprometemos a ofrecer
+                    productos de alta calidad,
+                    tanto en funcionalidad como
+                    en diseño. <br>
+                    <b>3.Adaptabilidad:</b> 
+                    Nos mantenemos flexibles y
+                    abiertos al cambio, ajustando
+                    nuestras estrategias a las
+                    necesidades del mercado. <br>
+                    <b>4. Orientación al
+                    Cliente:</b> Nos enfocamos en entender y
+                    satisfacer las necesidades de
+                    nuestros clientes, superando sus
+                    expectativas.
+                                    
+                    
+                </p>
+            </div>
+            </section>
+            <section class="perfiles">
+                <h1>Perfiles Tecnicos</h1>
+            </section>
+            <section class="empleados">
+                <div class="perfil">
+                    <img class="title" src="img/felipe.jpg" alt="Felipe" width="130px" height="130px">
+                    <h4 class="title">William Felipe Villamizar Soler</h4>
+                    <p>
+                        <b>Cargo:</b> Tecnólogo creativo<br>
+                        <b>Perfil Técnico:</b> Soy un estudiante con interés en la
+                        intersección entre tecnología y creatividad. Como Creative
+                        Technologist, me enfoco en explorar y aplicar tecnologías
+                        innovadoras para desarrollar soluciones creativas y únicas.
+                        Mi rol incluye colaborar en la creación de prototipos,
+                        experimentar con nuevas herramientas y técnicas, y aportar
+                        ideas frescas para integrar la tecnología en proyectos
+                        creativos. Mi objetivo es combinar habilidades técnicas con
+                        creatividad para impulsar la innovación dentro del equipo.
+    
+                    </p>
+                </div>
+                <div class="perfil">
+                    <img class="title" src="img/bryan.jpg" alt="Felipe" width="130px" height="130px">
+                    <h4 class="title">Bryan Sneider Gelvez Toloza</h4>
+                    <p>
+                        <b>Cargo:</b> Coordinador de Capacitación y Desarrollo<br>
+                        <b>Perfil Técnico:</b> Soy un estudiante en proceso de crecimiento
+                        profesional con un enfoque en la capacitación y el desarrollo
+                        de habilidades dentro del equipo. En mi rol como
+                        Coordinador de Capacitación y Desarrollo, me encargo de
+                        apoyar la formación interna y promover el aprendizaje
+                        continuo entre los miembros del equipo. Mi responsabilidad
+                        principal es organizar actividades de capacitación y facilitar
+                        el acceso a recursos educativos.
+                        
+    
+                    </p>
+                </div>
+                <div class="perfil">
+                    <img class="title" src="img/alvaro.jpg" alt="Felipe" width="130px" height="130px">
+                    <h4 class="title">Alvaro Sneider Portillo Mora</h4>
+                    <p>
+                        <b>Cargo:</b> Asistente de Desarrollo<br>
+                        <b>Perfil Técnico:</b> Soy un estudiante de segundo semestre de programación con
+                        una sólida comprensión de los fundamentos básicos de la
+                        programación en Java. Como Asistente de Desarrollo, mi
+                        papel consiste en colaborar en la implementación de
+                        funciones y en la corrección de errores básicos en el código.
+                        Estoy en proceso de mejorar mis habilidades a través de la
+                        práctica y el aprendizaje continuo. Mi enfoque está en apoyar
+                        al equipo en la creación de soluciones efectivas y en
+                        asegurar que el software funcione correctamente.
+    
+                    </p>
+                </div>
+                <div class="perfil">
+                    <img class="title" src="img/yo.jpg" alt="Felipe" width="130px" height="130px">
+                    <h4 class="title">Jhon Alejandro Guevara Pérez</h4>
+                    <p>
+                        <b>Cargo:</b> Desarrollador Web Junior<br>
+                        <b>Perfil Técnico:</b> Soy un estudiante con conocimientos básicos
+                        en el desarrollo de páginas web. En mi rol como
+                        Desarrollador Web Junior, me encargo de colaborar en la
+                        creación y mantenimiento de sitios web, aplicando mis
+                        habilidades en HTML y CSS. Mi objetivo es apoyar al equipo
+                        en el desarrollo de interfaces atractivas y funcionales,
+                        mientras continúo aprendiendo y mejorando mis habilidades
+                        en desarrollo web.
+                        
+    
+                    </p>
+                </div>
+            </section>
+            <section class="productos">
+                <h1>Productos</h1>
+                <div>
+                    <p>
+                        <b>1. Aplicación de Combinación de
+                            Ropa y Accesorios
+                            </b> <br>La Aplicación de Combinación de Ropa y Accesorios es una plataforma
+                            innovadora diseñada para revolucionar la forma en que los usuarios
+                            interactúan con la moda. Permite a los usuarios crear y visualizar
+                            combinaciones de prendas y accesorios de manera virtual, facilitando la
+                            toma de decisiones de compra y mejorando la experiencia de usuario tanto
+                            para consumidores como para empresas de moda.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <b>2. Módulo de Personalización
+                            </b> <br>Este es un componente adicional dentro de la aplicación principal que
+                            utiliza algoritmos para ofrecer recomendaciones personalizadas a los
+                            usuarios. Basado en sus preferencias, historial de compras, y estilos
+                            populares, el módulo sugiere combinaciones de ropa que se ajustan a su
+                            estilo y gustos.
+                    </p>
+                </div>
+                <div>                
+                    <p>
+                        <b>3. Catálogo Virtual
+                            </b> <br>Es una función dentro de la aplicación que permite a las empresas
+                            de moda cargar y gestionar sus colecciones de ropa y accesorios en
+                            un entorno digital. Los productos están organizados de manera
+                            atractiva, permitiendo a los usuarios explorar y combinar
+                            fácilmente las prendas.
+                    </p>
+                </div>
+            </section>
+            <section class="servicios">
+                <h1>Servicios</h1>
+                <img src="img/s1.png" alt="servicios 1" width="70%">
+                <img src="img/s2.png" alt="servicios 2" width="70%">
+            </section>
+        </div>
+        <div class="contacto">
+            <section class="redes">
+                <h1>Contáctanos<br></h1>
+                Dirección: Calle 10 #5-25<br>
+                Centro Comercial Gran Boulevard, Oficina 304<br>
+                Cúcuta, Norte de Santander<br>
+                Colombia<br>
+                <br>
+                <b>Teléfono: </b>+57 (7) 123 4567<br>
+                <b>Correo Electrónico: </b>info@outfitmatch.com<br>
+                <b>Redes Sociales: </b><br>
+                <ol>
+                    <li><b>Facebook: </b><a href="facebook.com/outfitmatch" class="hh">
+                        facebook.com/outfitmatch
+                    </a></li>
+                    <li><b>Instagram: </b><a href="instagram.com/outfitmatch" class="hh">
+                        instagram.com/outfitmatch
+                    </a></li>
+                    <li><b>Twitter: </b><a href="twitter.com/outfitmatch" class="hh">
+                        twitter.com/outfitmatch
+                    </a></li>
+            </section>
+            <section class="mapa">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1812.0396144001447!2d-72.49955547077384!3d7.886035374731071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e66459fc2fc2dc3%3A0xcca213fa41fc0b4a!2sCentro%20Comercial%20Gran%20Bulevar!5e0!3m2!1ses!2sco!4v1725395492794!5m2!1ses!2sco" 
+                width="500" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </section>
+
+
+    <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(to right, black, gray);
+    font-family: "Space Grotesk", sans-serif;
+    padding-top: 10vh;
+}
+header{
+    top: 0;
+    left: 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    border-bottom: 5px solid black;
+    position: fixed;
+    z-index: 1000;
+    background: linear-gradient(to right, black, gray);
+}
+a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+.barra{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black, gray);
+    border-radius: 50px;
+    width: 50%;
+    height: 50px;
+}
+.logo{
+    width: 7%;
+    display: flex;
+}
+.logo img{
+    width: 100%;
+}
+.surtitodo{
+    width: 9%;
+    display: flex;
+}
+.surtitodo img{
+    width: 100%;
+}
+.registro{
+    font-size: 20px;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+#log{
+    text-decoration: underline;
+}
+#sign{
+    width: 110px;
+    text-align: center;
+    background: #0cdfdf;
+    border-radius: 10px;
+    color: black;
+}
+
+.barra a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0cdfdf;
+    transform: translateX(0);
+    transition: 0.3s ease;
+}
+
+.barra a:hover{
+    color: #0cdfdf;
+}
+
+.barra a:hover::after{
+    width: 100%;
+    transform: translateX(0);
+}
+
+section[id]{
+    scroll-margin-top: 10vh;
+    width: 100%;
+    height: 90vh;
+}
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slogan{
+    width: 50%;
+    color: white;
+    font-size: 2.5rem;
+}
+
+model-viewer{
+    height: 500px;
+    width: 400px;
+}
+
+
+
+
+
+
+/*CONTACTO*/
+#quienes{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 340vh;
+}
+.informacion{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 80px;
+}
+.mision div{
+    padding-bottom: 40px;
+}
+.perfiles{
+    padding-bottom: 40px;
+}
+.empleados{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.empleados div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    text-align: justify;
+    padding-bottom: 40px;
+}
+.perfil p{
+    padding-top: 40px;
+}
+.productos div{
+    padding-top: 30px;
+}
+.servicios h1{
+    padding: 80px 0 40px 0;
+}
+.contacto{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/*Seccion Avatar*/
+#avatar{
+    display: flex;
+}
+.btnContain{
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.generoPress{
+    width: 45%;
+    height: 90%;
+    background: none;
+    border-radius: 30px;
+    border: solid 2px black;
+    padding: 0;
+}
+
+.colorPress{
+    width: 110px;
+    height: 110px;/*110*/
+    border-radius: 50%;
+    margin: 15px;
+    border: solid 5px black;
+}
+
+.btnPress{
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: none;
+    padding: 0;
+    color: #0cdfdf;
+}
+
+.personalizar{
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+    height: 89vh;
+    background: #3c4180;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border: solid, 6px, black;
+    visibility: visible;
+    font-size: 25px;
+    color: white;
+}
+
+.escoger{
+    display:flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 89vh;
+    background: #3c4180;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid, 6px, black;
+    visibility: visible;
+}
+
+#foto{
+    font-size: 25px;
+    border-radius: 20px;
+    background:#0cdfdf;
+    color: black;
+    width: 300px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.genero{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 40px;
+    border: 3px solid black;
+    height: 15%;
+    margin-top: 50px;
+}
+
+.color{
+    display:flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 89vh;
+    background: #3c4180;
+    justify-content: space-around;
+    border: solid, 6px, black;
+    visibility: visible;
+}
+
+.colores{
+    width: 110px;
+    height: 110px;/*110*/
+    border-radius: 50%;
+    margin: 15px;
+    border: none;
+}
+
+.botones{
+    width: 90px;
+    height: 60px;
+    background: none;
+    border: none;
+    margin: 10px;
+}
+
+.princi{
+    width: 130px;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    background: #1f2740;
+    border: solid, 6px, black;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.princi2{
+    width: 130px;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    background: #2f3c62;
+    border: solid, 6px, black;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.borrar{
+    width: 0;
+    display: none;
+    border: none;
+    background: none;
+    visibility: hidden;
+}
+
+.avatarBtn{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.ava{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono{
+    width: 100px;
+    height: 100px;
+    color: none;
+}
+
+.altura{
+    width: 90%;
+}
+
+input[type="range"]{
+    width: 100%;
+    height: 3px;
+}
+
+
+/*Catalogo*/
+
+
+#catalogo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:flex-start;
+    align-items: center;
+    color: white;
+    font-size: 45px;
+}
+
+.btnCatalogo{
+    width: 400px;
+    height: 200px;
+    background: none;
+    border: none;
+    padding: 0;
+}
